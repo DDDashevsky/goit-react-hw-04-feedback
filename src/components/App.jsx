@@ -15,15 +15,15 @@ export const App = () => {
     const name = e.target.name;
 
     if (name === 'good') {
-      setGood(good + 1);
+      setGood(prevState => prevState + 1);
     }
 
     if (name === 'neutral') {
-      setNeutral(neutral + 1);
+      setNeutral(prevState => prevState + 1);
     }
 
     if (name === 'bad') {
-      setBad(bad + 1);
+      setBad(prevState => prevState + 1);
     }
   };
 
